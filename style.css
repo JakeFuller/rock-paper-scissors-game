@@ -1,0 +1,53 @@
+html {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background: rgb(24, 24, 24);
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  font-size: 20px;
+  color: darkgray;
+  background: rgb(24, 24, 24);
+  border: 2px outset;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.message {
+  grid-column: 2;
+  place-self: center;
+}
+
+#wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+#start {
+  grid-row: 1;
+  grid-column: 2;
+  place-self: center;
+}
+
+#playerMoves {
+  grid-row: 2;
+  grid-column: 2;
+  place-self: center;
+}
+
+.moveset {
+  grid-row: 2;
+  place-self: center;
+}
